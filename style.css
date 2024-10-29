@@ -1,0 +1,67 @@
+:root {
+  --font: "Rubik", sans-serif;
+  --Very-Dark-Gray: hsl(0, 0%, 17%);
+  --Dark-Gray: hsl(0, 0%, 59%);
+  --White: #ffffff;
+  --Black: #000000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  font-family: var(--font);
+  .header {
+    height: 300px;
+    padding-inline: 1.5rem;
+    background-image: url("./images/pattern-bg-mobile.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .title {
+      text-align: center;
+      color: var(--White);
+      font-size: 1.5625rem;
+      padding-top: 1.875rem;
+      margin-bottom: 2rem;
+    }
+
+    .group-search {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      .search {
+        width: 269px;
+        height: 58px;
+        padding-left: 1.5rem;
+        border-radius: 15px 0 0 15px;
+        border: none;
+        color: var(--Very-Dark-Gray);
+        font-weight: 700;
+        font-size: 1rem;
+        outline: none;
+
+      }
+      .btn-search{
+        margin: 0;
+        padding: 0;
+        width: 57px;
+        height: 58px;
+        border: none;
+        border-radius: 0 15px 15px 0;
+        background-color: var(--Black);
+        background-image: url("./images/icon-arrow.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+
+        &:hover{
+            cursor: pointer;
+        }
+
+      }
+    }
+  }
+}
