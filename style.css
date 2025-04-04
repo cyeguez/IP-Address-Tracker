@@ -20,6 +20,7 @@
     background-image: url("./images/pattern-bg-mobile.png");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
 
     .title {
       text-align: center;
@@ -32,20 +33,26 @@
     .group-search {
       display: flex;
       align-items: center;
-      justify-content: space-around;
+      justify-content: center;
+
       .search {
-        width: 269px;
+        width: clamp(240px, 20%, 300px);
         height: 58px;
         padding-left: 1.5rem;
-        border-radius: 15px 0 0 15px;
+        border-radius: 12px 0 0 12px;
         border: none;
         color: var(--Very-Dark-Gray);
         font-weight: 700;
         font-size: 1rem;
         outline: none;
 
+        &::placeholder {
+          color: var(--Dark-Gray);
+          font-size: 10px;
+          opacity: 0.7;
+        }
       }
-      .btn-search{
+      .btn-search {
         margin: 0;
         padding: 0;
         width: 57px;
@@ -57,10 +64,28 @@
         background-repeat: no-repeat;
         background-position: center;
 
-        &:hover{
-            cursor: pointer;
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    .header {
+      background-image: url("./images/pattern-bg-desktop.png");
+
+      .group-search {
+        .search,
+        .btn-search {
+          height: 38px;
         }
 
+        .search::placeholder {
+          font-size: 11px;
+          line-height: 18px;
+         
+        }
       }
     }
   }
