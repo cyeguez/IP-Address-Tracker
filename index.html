@@ -37,32 +37,33 @@
       <div class="header">
         <h1 class="title">IP Address Tracker</h1>
         <div class="group-search">
-          <input type="text" class="search" placeholder="Search for any IP address or domain" />
-          <button class="btn-search"></button>
+          <input type="text" class="search" id="fieldIp" placeholder="Search for any IP address or domain" />
+          <button class="btn-search" id="btnSearch"></button>
         </div>
+        <div class="error-message" id="error-message">Please enter a valid IP address or domain</div>
       </div>
 
       <main class="main">
         <div class="info">
           <div class="ip">
             <p class="category">IP Address</p>
-            <p class="detail">192.212.174.101</p>
+            <p class="detail" id="ipAddress">192.212.174.101</p>
           </div>
           <div class="location">
             <p class="category">Location</p>
-            <p class="detail">Brooklin, NY 10001</p>
+            <p class="detail" id="country">Brooklin, NY 10001</p>
           </div>
           <div class="timezone">
             <p class="category">Timezone</p>
-            <p class="detail">UTC-05:00</p>
+            <p class="detail" id="timezone">UTC-05:00</p>
           </div>
           <div class="isp">
             <p class="category">ISP</p>
-            <p class="detail">SpaceX Starlink</p>
+            <p class="detail" id="company">SpaceX Starlink</p>
           </div>
         </div>
+        <div class="map" id="map"></div>
       </main>
-      <div class="aside"></div>
     </div>
 
  
@@ -72,5 +73,7 @@
         >Frontend Mentor</a
       >. Coded by <a href="#">Your Name Here</a>. -->
     </div>
+
+    <script src="main.js"></script>
   </body>
 </html>
