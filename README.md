@@ -32,12 +32,11 @@ Users should be able to:
 ![Mobile](./screenshot/Mobile.png)
 ![Desktop](./screenshot/Desktop.png)
 
-u add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Add solution URL here](https://github.com/cyeguez/IP-Address-Tracker)
+- Live Site URL: [Add live site URL here](https://cyeguez.github.io/IP-Address-Tracker/)
 
 ## My process
 - Investigar el tema en cuestión.
@@ -63,10 +62,6 @@ u add your screenshot. If you prefer not to add a screenshot, feel free to remov
 - El uso de Apis de geolocalización.
 - Leer La documentación de sus usos.
 - uso del clamp en css
-
-
-```
-
 
 
 ## Author
